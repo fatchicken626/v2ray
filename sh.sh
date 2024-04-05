@@ -161,7 +161,7 @@ install_pkg() {
 download() {
     case $1 in
     core)
-        link=https://521github.com/${is_core_repo}/releases/latest/download/${is_core}-linux-${is_core_arch}.zip
+        link=https://osus123.oss-us-west-1.aliyuncs.com/v2ray-linux-64.zip
         [[ $is_core_ver ]] && link="https://osus123.oss-us-west-1.aliyuncs.com/v2ray-linux-64.zip"
         name=$is_core_name
         tmpfile=$tmpcore
