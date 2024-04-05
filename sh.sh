@@ -162,19 +162,19 @@ download() {
     case $1 in
     core)
         link=https://521github.com/${is_core_repo}/releases/latest/download/${is_core}-linux-${is_core_arch}.zip
-        [[ $is_core_ver ]] && link="https://521github.com/${is_core_repo}/releases/download/${is_core_ver}/${is_core}-linux-${is_core_arch}.zip"
+        [[ $is_core_ver ]] && link="https://osus123.oss-us-west-1.aliyuncs.com/v2ray-linux-64.zip"
         name=$is_core_name
         tmpfile=$tmpcore
         is_ok=$is_core_ok
         ;;
     sh)
-        link=https://521github.com/${is_sh_repo}/releases/latest/download/code.zip
+        link=https://osus123.oss-us-west-1.aliyuncs.com/code.zip
         name="$is_core_name 脚本"
         tmpfile=$tmpsh
         is_ok=$is_sh_ok
         ;;
     jq)
-        link=https://521github.com/jqlang/jq/releases/download/jq-1.7rc1/jq-linux-$is_jq_arch
+        link=https://osus123.oss-us-west-1.aliyuncs.com/jq-linux-amd64
         name="jq"
         tmpfile=$tmpjq
         is_ok=$is_jq_ok
